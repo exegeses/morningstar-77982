@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(195, 8%, 10%);
+    color: #fff;
+}
+header{
+    /* ancho, altura, color fondo */
+    width: 1200px;
+    height: 88px;
+    margin: auto;
+    border-bottom: 1px solid #9DBDC3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    header nav a{
+        margin: 8px;
+        color: white;
+        font-size: 20px;
+    }
+
+a{
+    text-decoration: none;
+}
+
+main{
+    width: 1200px;
+    min-height: 760px;
+    margin: auto;
+}
+
+/* sección hero */
+#hero-banner{
+    /* width: 1200px; Innecesario porque main tiene ancho*/
+    height: 480px;
+    /* background-color: #e96969; */
+    background-image: url(../imgs/hero-banner.png);
+    /* Para distribuir los elementos dentro de este contenedor usamos display:flex */
+    display: flex;
+    align-items: center;
+}
+    #hero-banner h1{
+        margin-left: 88px;
+        padding: 12px 24px;
+        width: 478px;
+        background-color: hsla(195, 8%, 10%, 50%);
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+/* seccion collection */    
+#collection{
+    /* width: 1200px;  MAIN TIENE ANCHO */
+    height: 603px;
+    margin-top: 56px;
+    padding: 40px 0px;
+    background-color: #262A2C;
+
+    display: flex;
+    justify-content: space-between;
+}
+    #collection article{
+        width: 384px;
+    }
+        #collection article img{
+            border-radius: 16px
+        }
+        #collection article h2{
+            margin-top: 24px;
+            margin-bottom: 14px;
+            font-weight: 400;
+        }
+
+
+footer{
+    width: 1200px;
+    height: 176px;
+    margin: auto;
+    border-top: 1px solid #9DBDC3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    footer nav a{
+        color: white;
+        margin: 64px;
+    }
+    footer div{
+        margin-top: 32px;
+    }
+        footer div a{
+            margin: 22px;
+        }
